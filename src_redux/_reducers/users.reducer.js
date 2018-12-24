@@ -8,12 +8,13 @@ export function users (state = {}, action) {
       };
     case userConstants.GETALL_SUCCESS:
       return {
-        useritems: action.users,
+        items: action.users,
       };
     case userConstants.GETALL_FAILURE:
       return {
         error: action.error,
       };
+
     case userConstants.DELETE_REQUEST:
       // add 'deleting:true' property to user being deleted
       return {
