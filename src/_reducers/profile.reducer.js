@@ -4,7 +4,7 @@ import { userConstants } from '../_constants';
 // - Get one user
 // - Update one user
 
-export function user (state = {}, action) {
+export function profile (state = {}, action) {
   switch (action.type) {
     case userConstants.GETONE_REQUEST:
       return {
@@ -28,6 +28,7 @@ export function user (state = {}, action) {
       return {};
     case userConstants.UPDATE_FAILURE:
       return {};
-
+    default:
+      return state;
   }
 }

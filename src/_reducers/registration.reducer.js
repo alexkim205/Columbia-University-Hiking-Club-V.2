@@ -1,5 +1,4 @@
 import { userConstants } from '../_constants';
-import { userConstants } from '../_constants/user.constants';
 
 // used by spinner animation
 
