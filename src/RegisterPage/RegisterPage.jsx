@@ -1,37 +1,17 @@
 import React       from 'react';
 import { Link }    from 'react-router-dom';
 import { connect } from 'react-redux';
-import styled      from 'styled-components';
 
 import { userActions } from '../_actions';
 
 import {
-  Box,
-  Button,
-  CheckBox,
-  Select,
-  TextArea,
-  TextInput,
-  Text,
-  Heading,
-}                     from 'grommet';
-import { Add, Close } from 'grommet-icons';
-
-import { PhoneMaskedInput, EmailMaskedInput } from '../_components/MaskedFields';
-import { FormFieldWrapper }                   from '../_components/FormFieldWrapper';
-
-const RegisterBox = styled(Box)`
-  margin: 0 auto;
-  width: 350px;
-`;
-const StyledTextInput = styled(TextInput)`
-  ${({hasError}) => hasError && `
-    border: 2px solid red;
-  `}   
-`;
-const ButtonsBox = styled(Box)`
-  justify-content: center;
-`;
+  Box, Button, CheckBox, Select,
+  TextArea, TextInput, Text, Heading,
+}                                               from 'grommet';
+import { Add, Close, CoatCheck, UserNew }       from 'grommet-icons';
+import { PhoneMaskedInput, EmailMaskedInput }   from '../_components/MaskedFields';
+import { FormFieldWrapper }                     from '../_components/FormFieldWrapper';
+import { FormBox, StyledTextInput, ButtonsBox } from '../_css/form.css';
 
 // school options
 const schoolOptions = [
@@ -114,7 +94,8 @@ class RegisterPage extends React.Component {
     const {registering} = this.props;
     const {user, submitted} = this.state;
     return (
-      <RegisterBox>
+      <FormBox>
+        <UserNew color='brand' size='xlarge'/>
         <Heading
           alignSelf="center"
           level={1}
@@ -191,7 +172,7 @@ class RegisterPage extends React.Component {
 
           </form>
         </Box>
-      </RegisterBox>
+      </FormBox>
     );
   }
 }

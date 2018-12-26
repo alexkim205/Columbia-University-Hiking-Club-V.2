@@ -76,7 +76,7 @@ class App extends React.Component {
               columns={['flex']}
               alignContent='center'
               rows={['70px', 'flex', 'small']}
-              // fill={true}
+              fill={false}
               gap='none'
 
             >
