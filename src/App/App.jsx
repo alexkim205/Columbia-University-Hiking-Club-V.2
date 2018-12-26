@@ -21,6 +21,7 @@ const theme = {
   global: {
     colors: {
       brand: '#228BE6',
+      background: '#fffffe'
     },
     font: {
       family: 'Roboto',
@@ -38,6 +39,7 @@ const NavBar = styled(Box)`
 `;
 const Main = styled(Box)`
   padding: 1em 10em;
+  background: ${theme.global.colors.background};
   
   // ${media.giant`padding: 1em 12em;`}
   ${media.desktop`padding: 1em 10em;`}
@@ -74,12 +76,12 @@ class App extends React.Component {
               columns={['flex']}
               alignContent='center'
               rows={['70px', 'flex', 'small']}
-              fill={true}
-              gap='small'
+              // fill={true}
+              gap='none'
 
             >
               <NavBar gridArea='nav' background='brand'/>
-              <Main gridArea='main' background='accent-1'>
+              <Main gridArea='main'>
                 {alert.message &&
                 <div className={`alert ${alert.type}`}>{alert.message}</div>
                 }
