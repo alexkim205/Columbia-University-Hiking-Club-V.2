@@ -7,11 +7,14 @@ import { userActions } from '../_actions';
 import {
   Box, Button, CheckBox, Select,
   TextArea, TextInput, Text, Heading,
-}                                               from 'grommet';
-import { Add, CoatCheck }                            from 'grommet-icons';
-import { PhoneMaskedInput, EmailMaskedInput }   from '../_components/MaskedFields';
-import { FormFieldWrapper }                     from '../_components/FormFieldWrapper';
-import { FormBox, StyledTextInput, ButtonsBox } from '../_css/form.css';
+}                                             from 'grommet';
+import { Add, Login }                     from 'grommet-icons';
+import { PhoneMaskedInput, EmailMaskedInput } from '../_components/MaskedFields';
+import { FormFieldWrapper }                   from '../_components/FormFieldWrapper';
+import {
+  FormBox, StyledTextInput, ButtonsBox,
+  LoadingBox,
+}                                             from '../_css/form.css';
 
 class LoginPage extends React.Component {
   constructor (props) {
@@ -59,7 +62,7 @@ class LoginPage extends React.Component {
     const {user, submitted} = this.state;
     return (
       <FormBox>
-        <CoatCheck color='brand' size='xlarge'/>
+        <Login color='brand' size='xlarge'/>
         <Heading
           alignSelf="center"
           level={1}
@@ -75,16 +78,18 @@ class LoginPage extends React.Component {
                                onChange={this.handleChange} type='password'/>
             </FormFieldWrapper>
             <ButtonsBox direction="row" align="center" gap="small" pad="large">
-              {loggingIn &&
-              <img
-                alt=""
-                src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
-              }
               <Button label="Login" type="submit" primary/>
               <Link to="/register">
                 <Button icon={<Add/>} label="Register"/>
               </Link>
             </ButtonsBox>
+            <LoadingBox>
+              {loggingIn &&
+              <img
+                alt=""
+                src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+              }
+            </LoadingBox>
 
           </form>
         </Box>

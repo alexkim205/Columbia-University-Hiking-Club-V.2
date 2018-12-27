@@ -1,5 +1,6 @@
 import styled             from 'styled-components';
 import { Box, TextInput } from 'grommet';
+import { media }          from '../_helpers/breakpoint-util';
 
 const FormBox = styled(Box)`
   margin: 2em auto;
@@ -16,11 +17,20 @@ const StyledTextInput = styled(TextInput)`
 `;
 const ButtonsBox = styled(Box)`
   justify-content: center;
+  ${media.lMobile`
+    flex-direction: column;
+    button {
+      margin: 0.5em 0;
+    }
+  `}
 `;
-
+const LoadingBox = styled.div`
+  text-align: center;
+`;
 
 export {
   FormBox,
   StyledTextInput,
-  ButtonsBox
-}
+  ButtonsBox,
+  LoadingBox
+};

@@ -4,7 +4,7 @@ import { connect }               from 'react-redux';
 
 import { history }      from '../_helpers';
 import { alertActions } from '../_actions';
-import { PrivateRoute } from '../_components';
+import { PrivateRoute, NavBar } from '../_components';
 import { HomePage }     from '../HomePage';
 import { LoginPage }    from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
@@ -34,17 +34,14 @@ const theme = {
 const StyledGrommet = styled(Grommet)`
   height: 100vh;
 `;
-const NavBar = styled(Box)`
 
-`;
 const Main = styled(Box)`
   padding: 1em 10em;
   background: ${theme.global.colors.background};
   
-  // ${media.giant`padding: 1em 12em;`}
-  ${media.desktop`padding: 1em 10em;`}
+  ${media.laptop`padding: 1em 10em;`}
   ${media.tablet`padding: 1em 4em;`}
-  ${media.phone`padding: 1em 2em;`}
+  ${media.mMobile`padding: 1em 2em;`}
 `;
 const Footer = styled(Box)`
 
@@ -78,7 +75,6 @@ class App extends React.Component {
               rows={['70px', 'flex', 'small']}
               fill={false}
               gap='none'
-
             >
               <NavBar gridArea='nav' background='brand'/>
               <Main gridArea='main'>
