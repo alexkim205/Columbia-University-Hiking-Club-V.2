@@ -10,7 +10,7 @@ const StyledPrimaryButton = styled(Button)`
 `;
 const StyledOutlineButton = styled(Button)`
   border-color: ${theme.global.colors.accent};
-  color: ${theme.global.colors.text.light};
+  color: ${theme.global.colors.text.gray};
 `;
 
 export const PrimaryButton = (props) => (

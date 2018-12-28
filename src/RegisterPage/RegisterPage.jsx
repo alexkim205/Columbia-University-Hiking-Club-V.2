@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
+import theme from '../_css/theme.js';
 
 import { userActions } from '../_actions';
 
@@ -13,7 +15,20 @@ import {
   OutlineButton,
   PrimaryButton,
 } from '../_components';
-import { FormBox, StyledTextInput, ButtonsBox, LoadingBox } from '../_css/form.css';
+import {
+  FormBox,
+  StyledTextInput,
+  ButtonsBox,
+  LoadingBox,
+  StyledMainIcon,
+  StyledHeading,
+  FormHeading,
+  StyledCheckBox,
+} from '../_css/form.css';
+
+const RegisterBox = styled(FormBox)`
+  border-top: 6px solid ${theme.global.colors.accent};
+`;
 
 // school options
 const schoolOptions = [
@@ -96,12 +111,14 @@ class RegisterPage extends React.Component {
     const {registering} = this.props;
     const {user, submitted} = this.state;
     return (
-      <FormBox>
-        <UserNew color='brand' size='xlarge'/>
-        <Heading
+      <RegisterBox>
+        <StyledMainIcon>
+          <UserNew color='white' size='large'/>
+        </StyledMainIcon>
+        <FormHeading
           alignSelf="center"
-          level={1}
-        >Register</Heading>
+          level={2}
+        >Register</FormHeading>
         <Box>
           <form name="form" onSubmit={this.handleSubmit}>
 
@@ -141,30 +158,36 @@ class RegisterPage extends React.Component {
               <TextArea name='medicalConditions' value={user.medicalConditions}
                         onChange={this.handleChange}/>
             </FormFieldWrapper>
-            <CheckBox
-              name='interestInHiking'
-              label={
-                <Text margin='xsmall' size='medium' weight='bold'>
-                  I am interested in leading a hike for CUHC.
-                </Text>}
-              checked={user.interestInHiking}
-              onChange={this.handleCheckBoxChange}
-            />
-            <CheckBox
-              name='interestInDriving'
-              label={
-                <Text margin='xsmall' size='medium' weight='bold'>
-                  I am interested in driving to hikes for CUHC.
-                </Text>}
-              checked={user.interestInDriving}
-              onChange={this.handleCheckBoxChange}
-            />
+            <StyledCheckBox>
+              <CheckBox
+                name='interestInHiking'
+                label={
+                  <StyledHeading level={4} margin='xsmall' size='small'>
+                    I am interested in leading a hike for CUHC.
+                  </StyledHeading>
+                }
+                checked={user.interestInHiking}
+                onChange={this.handleCheckBoxChange}
+              />
+            </StyledCheckBox>
+            <StyledCheckBox>
+              <CheckBox
+                name='interestInDriving'
+                label={
+                  <StyledHeading level={4} margin='xsmall' size='small'>
+                    I am interested in driving to hikes for CUHC.
+                  </StyledHeading>
+                }
+                checked={user.interestInDriving}
+                onChange={this.handleCheckBoxChange}
+              />
+            </StyledCheckBox>
 
-            <ButtonsBox direction="row" align="center" gap="small" pad="large">
+            <ButtonsBox direction="row" align="center" gap="small">
               <PrimaryButton label="Submit" type="submit"/>
-              <Link to="/login">
-                <OutlineButton icon={<Close/>} label="Cancel"/>
-              </Link>
+              {/*<Link to="/login">*/}
+                {/*<OutlineButton icon={<Close/>} label="Cancel"/>*/}
+              {/*</Link>*/}
             </ButtonsBox>
             <LoadingBox>
               {registering &&
@@ -176,7 +199,7 @@ class RegisterPage extends React.Component {
 
           </form>
         </Box>
-      </FormBox>
+      </RegisterBox>
     );
   }
 }

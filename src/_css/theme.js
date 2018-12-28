@@ -6,10 +6,11 @@ const theme = {
       accent: '#d9463e',
       darkAccent: '#712300',
       gray: '#c8b9a7',
-      background: '#fffffe',
+      background: '#F0F3F7',
       text: {
         dark: '#fff',
-        light: '#000'
+        light: '#000',
+        gray: 'hsl(0, 0%, 25%)'
       }
     },
     font: {

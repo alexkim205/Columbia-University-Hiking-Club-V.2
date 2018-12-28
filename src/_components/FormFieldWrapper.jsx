@@ -1,6 +1,8 @@
-import React       from 'react';
+import React from 'react';
 import { Heading, Box } from 'grommet';
-import styled      from 'styled-components';
+import styled from 'styled-components';
+import theme from '../_css/theme.js';
+import { StyledHeading } from '../_css/form.css';
 
 const StyledWrapper = styled.div`
   margin: 1em auto 1.5em auto;
@@ -12,7 +14,7 @@ const StyledFieldWrapper = styled.div`
   margin: 0.5em auto;
 `;
 
-const RedHeading = styled(Heading)`
+const RedHeading = styled(StyledHeading)`
   color: palevioletred;
 `;
 
@@ -34,7 +36,7 @@ class FormFieldWrapper extends React.Component {
         {submitted && !notrequired && !refValue ? (
           <RedHeading level={4} margin='xsmall' size='small'>{label} *</RedHeading>
         ) : (
-          <Heading level={4} margin='xsmall' size='small'>{label}</Heading>
+          <StyledHeading level={4} margin='xsmall' size='small'>{label}</StyledHeading>
         )}
         <StyledFieldWrapper>
           {this.props.children}

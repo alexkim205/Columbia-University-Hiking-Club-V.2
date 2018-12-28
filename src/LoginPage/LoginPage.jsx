@@ -1,14 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 
 import { userActions } from '../_actions';
 
 import { Box, Heading } from 'grommet';
-import { Add, Login } from 'grommet-icons';
+import { Add, Login, UserNew } from 'grommet-icons';
 import { EmailMaskedInput, FormFieldWrapper, OutlineButton, PrimaryButton } from '../_components';
-import { FormBox, StyledTextInput, ButtonsBox, LoadingBox } from '../_css/form.css';
+import {
+  FormBox,
+  StyledTextInput,
+  ButtonsBox,
+  LoadingBox,
+  StyledMainIcon,
+  FormHeading,
+} from '../_css/form.css';
 import theme from '../_css/theme.js';
+
+const LoginBox = styled(FormBox)`
+  border-top: 6px solid ${theme.global.colors.brand};
+`;
 
 class LoginPage extends React.Component {
   constructor (props) {
@@ -55,12 +67,14 @@ class LoginPage extends React.Component {
     const {loggingIn} = this.props;
     const {user, submitted} = this.state;
     return (
-      <FormBox>
-        <Login color={theme.global.colors.brand} size='xlarge'/>
-        <Heading
+      <LoginBox>
+        <StyledMainIcon>
+          <Login color='white' size='large'/>
+        </StyledMainIcon>
+        <FormHeading
           alignSelf="center"
-          level={1}
-        >Login</Heading>
+          level={2}
+        >Login</FormHeading>
         <Box>
           <form name="form" onSubmit={this.handleSubmit}>
             <FormFieldWrapper label='Email Address' refValue={user.email} submitted={submitted}>
@@ -75,7 +89,7 @@ class LoginPage extends React.Component {
               <PrimaryButton label="Login" type="submit"
                              primary/>
               <Link to="/register">
-                <OutlineButton icon={<Add/>} label="Register"/>
+                <OutlineButton icon={<Add size='small'/>} label="Register"/>
               </Link>
             </ButtonsBox>
             <LoadingBox>
@@ -88,7 +102,7 @@ class LoginPage extends React.Component {
 
           </form>
         </Box>
-      </FormBox>
+      </LoginBox>
     );
   }
 }
