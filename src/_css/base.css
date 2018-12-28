@@ -5,3 +5,7 @@ html {
 body, #root, #router-container {
     height: inherit;
 }
+
+body {
+    margin: 0px;
+}

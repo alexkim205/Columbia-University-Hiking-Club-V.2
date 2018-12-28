@@ -1,20 +1,14 @@
-import React       from 'react';
-import { Link }    from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
 
-import {
-  Box, Button, CheckBox, Select,
-  TextArea, TextInput, Text, Heading,
-}                                             from 'grommet';
-import { Add, Login }                     from 'grommet-icons';
-import { PhoneMaskedInput, EmailMaskedInput } from '../_components/MaskedFields';
-import { FormFieldWrapper }                   from '../_components/FormFieldWrapper';
-import {
-  FormBox, StyledTextInput, ButtonsBox,
-  LoadingBox,
-}                                             from '../_css/form.css';
+import { Box, Heading } from 'grommet';
+import { Add, Login } from 'grommet-icons';
+import { EmailMaskedInput, FormFieldWrapper, OutlineButton, PrimaryButton } from '../_components';
+import { FormBox, StyledTextInput, ButtonsBox, LoadingBox } from '../_css/form.css';
+import theme from '../_css/theme.js';
 
 class LoginPage extends React.Component {
   constructor (props) {
@@ -62,7 +56,7 @@ class LoginPage extends React.Component {
     const {user, submitted} = this.state;
     return (
       <FormBox>
-        <Login color='brand' size='xlarge'/>
+        <Login color={theme.global.colors.brand} size='xlarge'/>
         <Heading
           alignSelf="center"
           level={1}
@@ -78,9 +72,10 @@ class LoginPage extends React.Component {
                                onChange={this.handleChange} type='password'/>
             </FormFieldWrapper>
             <ButtonsBox direction="row" align="center" gap="small" pad="large">
-              <Button label="Login" type="submit" primary/>
+              <PrimaryButton label="Login" type="submit"
+                             primary/>
               <Link to="/register">
-                <Button icon={<Add/>} label="Register"/>
+                <OutlineButton icon={<Add/>} label="Register"/>
               </Link>
             </ButtonsBox>
             <LoadingBox>

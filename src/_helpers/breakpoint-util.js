@@ -6,6 +6,7 @@ const sizes = {
   lLaptop: 1440,
   laptop: 1024,
   tablet: 768,
+  mablet: 570,
   lMobile: 425,
   mMobile: 375,
   sMobile: 320,

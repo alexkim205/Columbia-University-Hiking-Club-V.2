@@ -2,34 +2,21 @@ import React                     from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import { connect }               from 'react-redux';
 
-import { history }      from '../_helpers';
-import { alertActions } from '../_actions';
-import { PrivateRoute, NavBar } from '../_components';
-import { HomePage }     from '../HomePage';
-import { LoginPage }    from '../LoginPage';
-import { RegisterPage } from '../RegisterPage';
-import { ProfilePage }  from '../ProfilePage';
+import { history }                      from '../_helpers';
+import { alertActions }                 from '../_actions';
+import { PrivateRoute, NavBar, Footer} from '../_components';
+import { HomePage }                     from '../HomePage';
+import { LoginPage }                    from '../LoginPage';
+import { RegisterPage }                 from '../RegisterPage';
+import { ProfilePage }                  from '../ProfilePage';
 
 // Styling
 import { Grommet, Box, Grid } from 'grommet';
 import styled                 from 'styled-components';
 import { media }              from '../_helpers/breakpoint-util';
+import theme                  from '../_css/theme.js';
 import '../_css/base.css';
 import '../_css/font.css';
-
-const theme = {
-  global: {
-    colors: {
-      brand: '#228BE6',
-      background: '#fffffe'
-    },
-    font: {
-      family: 'Roboto',
-      size: '14px',
-      height: '20px',
-    },
-  },
-};
 
 const StyledGrommet = styled(Grommet)`
   height: 100vh;
@@ -42,9 +29,6 @@ const Main = styled(Box)`
   ${media.laptop`padding: 1em 10em;`}
   ${media.tablet`padding: 1em 4em;`}
   ${media.mMobile`padding: 1em 2em;`}
-`;
-const Footer = styled(Box)`
-
 `;
 
 class App extends React.Component {
@@ -73,10 +57,11 @@ class App extends React.Component {
               columns={['flex']}
               alignContent='center'
               rows={['70px', 'flex', 'small']}
-              fill={false}
+              fill={true}
               gap='none'
+              margin='0'
             >
-              <NavBar gridArea='nav' background='brand'/>
+              <NavBar gridArea='nav'/>
               <Main gridArea='main'>
                 {alert.message &&
                 <div className={`alert ${alert.type}`}>{alert.message}</div>
@@ -88,7 +73,7 @@ class App extends React.Component {
                   <Route path="/register" component={RegisterPage}/>
                 </Switch>
               </Main>
-              <Footer gridArea='foot' background='brand'/>
+              <Footer gridArea='foot'/>
             </Grid>
           </div>
         </Router>

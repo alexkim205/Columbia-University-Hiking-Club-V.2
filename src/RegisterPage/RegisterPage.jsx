@@ -1,20 +1,19 @@
-import React       from 'react';
-import { Link }    from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
 
+import { Box, Button, CheckBox, Select, TextArea, TextInput, Text, Heading } from 'grommet';
+import { Add, Close, CoatCheck, UserNew } from 'grommet-icons';
 import {
-  Box, Button, CheckBox, Select,
-  TextArea, TextInput, Text, Heading,
-}                                             from 'grommet';
-import { Add, Close, CoatCheck, UserNew }     from 'grommet-icons';
-import { PhoneMaskedInput, EmailMaskedInput } from '../_components/MaskedFields';
-import { FormFieldWrapper }                   from '../_components/FormFieldWrapper';
-import {
-  FormBox, StyledTextInput, ButtonsBox,
-  LoadingBox,
-}                                             from '../_css/form.css';
+  PhoneMaskedInput,
+  EmailMaskedInput,
+  FormFieldWrapper,
+  OutlineButton,
+  PrimaryButton,
+} from '../_components';
+import { FormBox, StyledTextInput, ButtonsBox, LoadingBox } from '../_css/form.css';
 
 // school options
 const schoolOptions = [
@@ -162,9 +161,9 @@ class RegisterPage extends React.Component {
             />
 
             <ButtonsBox direction="row" align="center" gap="small" pad="large">
-              <Button label="Submit" type="submit" primary/>
+              <PrimaryButton label="Submit" type="submit"/>
               <Link to="/login">
-                <Button icon={<Close/>} label="Cancel"/>
+                <OutlineButton icon={<Close/>} label="Cancel"/>
               </Link>
             </ButtonsBox>
             <LoadingBox>
