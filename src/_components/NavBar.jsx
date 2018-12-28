@@ -1,12 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { media } from '../_helpers/breakpoint-util';
 
 import { Box } from 'grommet';
 import { Menu, Close } from 'grommet-icons';
 import theme from '../_css/theme.js';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 const NavBarWrapper = styled(Box)`
   font-family: Montserrat;
