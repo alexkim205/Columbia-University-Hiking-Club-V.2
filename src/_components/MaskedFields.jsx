@@ -28,7 +28,6 @@ const StyledMaskedInput = styled(MaskedInput)`
 class PhoneMaskedInput extends React.Component {
 
   render () {
-    console.log(this.props.value);
     return (
       <MaskedInputContainer>
         <StyledMaskedInput
@@ -45,7 +44,6 @@ class PhoneMaskedInput extends React.Component {
 class EmailMaskedInput extends React.Component {
 
   render () {
-    console.log(this.props.value);
     return (
       <MaskedInputContainer>
         <StyledMaskedInput

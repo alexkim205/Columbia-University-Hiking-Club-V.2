@@ -1,7 +1,7 @@
-const config = require('config.json');
+const config = require('../config.json');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const db = require('_helpers/db');
+const db = require('../_helpers/db');
 const User = db.User;
 
 module.exports = {
@@ -15,6 +15,7 @@ module.exports = {
 
 async function authenticate ({email, password}) {
   const user = await User.findOne({email});
+  console.log(bcrypt.compareSync(password, user.password));
   if (user && bcrypt.compareSync(password, user.password)) {
     // return user with token without password
     const {password, ...userWithoutPwd} = user.toObject();
@@ -31,7 +32,7 @@ async function getAll () {
 }
 
 async function getById (id) {
-  return await User.findById(id).select('hash');
+  return await User.findById(id).select('-password');
 }
 
 async function create (userParam) {
@@ -44,7 +45,7 @@ async function create (userParam) {
 
   // hash password
   if (userParam.password) {
-    user.hash = bcrypt.hashSync(userParam.password, 10);
+    user.password = bcrypt.hashSync(userParam.password, 10);
   }
 
   // save user

@@ -147,7 +147,6 @@ class NavBar extends React.Component {
 
   handleNavBar (e) {
     this.setState({sideBarOpen: !this.state.sideBarOpen});
-    console.log(this.state.sideBarOpen);
 
     e.stopPropagation();
   }
