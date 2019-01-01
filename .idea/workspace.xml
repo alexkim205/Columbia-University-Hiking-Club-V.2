@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e3f2810-46cc-4c20-a279-09dd21f84e85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,7 +58,7 @@
           <entry key="js" value="22086" />
           <entry key="json" value="178" />
           <entry key="jsx" value="12652" />
-          <entry key="md" value="345" />
+          <entry key="md" value="367" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -69,7 +68,7 @@
           <entry key="JSON" value="178" />
           <entry key="JSX Harmony" value="12652" />
           <entry key="JavaScript" value="22092" />
-          <entry key="PLAIN_TEXT" value="345" />
+          <entry key="PLAIN_TEXT" value="367" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -113,8 +112,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+                <state>
+                  <caret column="52" selection-start-column="52" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -475,12 +474,12 @@
       <workItem from="1545960565772" duration="16616000" />
       <workItem from="1546031974481" duration="8555000" />
       <workItem from="1546065317557" duration="5053000" />
-      <workItem from="1546237085531" duration="16959000" />
+      <workItem from="1546237085531" duration="17011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95983000" />
+    <option name="totallyTimeSpent" value="96035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -911,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>

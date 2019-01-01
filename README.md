@@ -1,4 +1,4 @@
-# Columbia University Hiking Club
+# Columbia University Hiking Club (Take 2 w/o Django)
 
 A website for the Columbia University Hiking Club made with React + Redux + Node.JS + MongoDB.
 
