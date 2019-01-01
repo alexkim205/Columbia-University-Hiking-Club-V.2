@@ -6,16 +6,26 @@ const userSchema = new Schema({
   lastName: {type: String, required: true},
   email: {type: String, unique: true, required: true},
   password: {type: String, required: true},
-  school: {type: String, required: true},
+  school: {
+    type: String,
+    validate: {
+      validator: function (v) {
+        let schoolRegex = /Columbia College|SEAS Undergraduate|Barnard College|General Studies|SEAS Graduate|Graduate School of Arts and Sciences/i;
+        return schoolRegex.test(v);
+      },
+      message: props => `${props.value} is not a valid Columbia school`,
+    },
+    required: true,
+  },
   phoneNumber: {
     type: String,
     validate: {
-      validator: function(v) {
+      validator: function (v) {
         return /\+\d \(\d{3}\) \d{3}\-\d{4}$/.test(v);
       },
       message: props => `${props.value} is not a valid phone number`,
     },
-    required: [true, 'User phone number is required']
+    required: [true, 'User phone number is required'],
   },
   interestInDriving: {type: String},
   interestInHiking: {type: String},
@@ -23,7 +33,7 @@ const userSchema = new Schema({
   createdDate: {type: Date, default: Date.now},
   groups: {
     type: [String],
-    default: ['User']
+    default: ['User'],
   },
 });
 
