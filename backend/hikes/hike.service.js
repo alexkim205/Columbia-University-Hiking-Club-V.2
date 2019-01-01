@@ -16,7 +16,7 @@ module.exports = {
 
 // register user for a hike
 /*
- API: /hike-register/[userid]/[hikeid]/
+ API: hikes/register/[userid]/[hikeid]/
  METHOD: PUT
  PERMISSIONS: user
  1. check for fake auth token and return user if valid, else return unauthorized
@@ -48,7 +48,7 @@ async function register (userid, hikeid) {
 
 // unregister user for a hike
 /*
- API: /hike-unregister/[userid]/[hikeid]
+ API: hikes/unregister/[userid]/[hikeid]
  METHOD: PUT
  PERMISSIONS: user
  1. check for fake auth token and return user if valid, else return unauthorized
@@ -111,7 +111,7 @@ async function getById (id) {
 
 // create hike
 /*
- API: /hikes/[hikeid]
+ API: /hikes/new
  METHOD: POST
  PERMISSIONS: admin
  */
