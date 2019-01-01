@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e3f2810-46cc-4c20-a279-09dd21f84e85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/hikes/hike.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/hikes/hike.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/hikes/hike.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/hikes/hike.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/users/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/users/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,10 +32,10 @@
           <entry key="css" value="8" />
           <entry key="html" value="4" />
           <entry key="js" value="223" />
-          <entry key="json" value="12" />
+          <entry key="json" value="13" />
           <entry key="jsx" value="66" />
           <entry key="lock" value="1" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
           <entry key="ts" value="6" />
         </counts>
       </usages-collector>
@@ -44,10 +43,10 @@
         <counts>
           <entry key="CSS" value="8" />
           <entry key="HTML" value="4" />
-          <entry key="JSON" value="12" />
+          <entry key="JSON" value="13" />
           <entry key="JSX Harmony" value="66" />
           <entry key="JavaScript" value="223" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="TypeScript" value="6" />
           <entry key="yarn.lock" value="1" />
         </counts>
@@ -57,10 +56,10 @@
           <entry key="JavaScript Console" value="6" />
           <entry key="css" value="99" />
           <entry key="html" value="29" />
-          <entry key="js" value="21886" />
+          <entry key="js" value="22086" />
           <entry key="json" value="178" />
           <entry key="jsx" value="12652" />
-          <entry key="md" value="242" />
+          <entry key="md" value="345" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -69,8 +68,8 @@
           <entry key="HTML" value="29" />
           <entry key="JSON" value="178" />
           <entry key="JSX Harmony" value="12652" />
-          <entry key="JavaScript" value="21892" />
-          <entry key="PLAIN_TEXT" value="242" />
+          <entry key="JavaScript" value="22092" />
+          <entry key="PLAIN_TEXT" value="345" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -96,17 +95,26 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/hikes/hike.service.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
+                <state relative-caret-position="1695">
                   <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/hikes/hike.controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" selection-start-line="4" selection-end-line="11" selection-end-column="31" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -160,7 +168,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend/users/user.controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
+                <state relative-caret-position="-8">
                   <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="31" />
                 </state>
               </provider>
@@ -208,7 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src_redux/index.html" />
         <option value="$PROJECT_DIR$/src_redux/index.jsx" />
         <option value="$PROJECT_DIR$/src/_actions/user.actions.js" />
         <option value="$PROJECT_DIR$/src/_reducers/registration.reducer.js" />
@@ -257,8 +264,9 @@
         <option value="$PROJECT_DIR$/backend/hikes/hike.model.js" />
         <option value="$PROJECT_DIR$/backend/users/user.service.js" />
         <option value="$PROJECT_DIR$/backend/users/user.controller.js" />
-        <option value="$PROJECT_DIR$/backend/hikes/hike.controller.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike.service.js" />
+        <option value="$PROJECT_DIR$/backend/hikes/hike.controller.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -467,12 +475,12 @@
       <workItem from="1545960565772" duration="16616000" />
       <workItem from="1546031974481" duration="8555000" />
       <workItem from="1546065317557" duration="5053000" />
-      <workItem from="1546237085531" duration="16301000" />
+      <workItem from="1546237085531" duration="16959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95325000" />
+    <option name="totallyTimeSpent" value="95983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,7 +495,7 @@
     <frame x="0" y="22" width="1920" height="1110" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16640337" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16640337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -499,7 +507,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907662" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49962604" visible="true" weight="0.25834972" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49962604" visible="true" weight="0.22298625" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50037396" side_tool="true" weight="0.27701375" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -534,9 +542,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/text-mask-addons/dist/emailMask.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/text-mask-addons/dist/emailMask.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -725,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_components/NavBar.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -878,7 +876,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/users/user.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="-8">
           <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
@@ -892,15 +890,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/hikes/hike.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="1695">
           <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/hikes/hike.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="391">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
         </state>
       </provider>
     </entry>
