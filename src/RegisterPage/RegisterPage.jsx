@@ -1,18 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import theme from '../_css/theme.js';
 
 import { userActions } from '../_actions';
 
-import { Box, Button, CheckBox, Select, TextArea, TextInput, Text, Heading } from 'grommet';
-import { Add, Close, CoatCheck, UserNew } from 'grommet-icons';
+import { Box, CheckBox, Select, TextArea } from 'grommet';
+import { UserNew } from 'grommet-icons';
 import {
   PhoneMaskedInput,
   EmailMaskedInput,
   FormFieldWrapper,
-  OutlineButton,
   PrimaryButton,
 } from '../_components';
 import {

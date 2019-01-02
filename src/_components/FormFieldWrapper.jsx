@@ -1,7 +1,5 @@
 import React from 'react';
-import { Heading, Box } from 'grommet';
 import styled from 'styled-components';
-import theme from '../_css/theme.js';
 import { StyledHeading } from '../_css/form.css';
 
 const StyledWrapper = styled.div`

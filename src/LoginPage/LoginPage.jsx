@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 import { userActions } from '../_actions';
 
-import { Box, Heading } from 'grommet';
-import { Add, Login, UserNew } from 'grommet-icons';
+import { Box } from 'grommet';
+import { Add, Login} from 'grommet-icons';
 import { EmailMaskedInput, FormFieldWrapper, OutlineButton, PrimaryButton } from '../_components';
 import {
   FormBox,

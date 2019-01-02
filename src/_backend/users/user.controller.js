@@ -1,15 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const userService = require('./user.service');
+const Role = require('../_helpers/role');
+const authorize = require('../_helpers/authorize');
 
 // routes with baseURL - /users
 router.post('/authenticate', authenticate);
 router.post('/register', register);
-router.get('/', getAll);
+router.get('/', authorize(Role.Admin), getAll);
 // router.get('/current', getCurrent);
-router.get('/:id', getById);
-router.put('/:id', update);
-router.delete('/:id', _delete);
+router.get('/:id', authorize([Role.Admin, Role.User]), getById);
+router.put('/:id', authorize(Role.User), update);
+router.delete('/:id', authorize(Role.Admin), _delete);
 
 module.exports = router;
 
@@ -39,6 +41,14 @@ function getAll (req, res, next) {
 // }
 
 function getById (req, res, next) {
+  const currentUser = req.user;
+  const id = parseInt(req.params.id);
+
+  // only allows admins to access other user records
+  if (id !== currentUser.sub && currentUser.role !== Role.Admin) {
+    return res.status(401).json({message: 'Unauthorized'});
+  }
+
   userService.getById(req.params.id)
     .then(user => user ? res.json(user) : res.sendStatus(404))
     .catch(err => next(err));

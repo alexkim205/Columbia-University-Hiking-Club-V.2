@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e3f2810-46cc-4c20-a279-09dd21f84e85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_backend/_helpers/authorize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_backend/_helpers/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_services/hike.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README-backend.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/README-backend.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/_helpers/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/_helpers/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/_helpers/error-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/_helpers/error-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/_helpers/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/_helpers/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/hikes/hike-request.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/hikes/hike-request.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/hikes/hike-request.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/hikes/hike-request.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/hikes/hike-request.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/hikes/hike-request.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/hikes/hike.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/hikes/hike.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/hikes/hike.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/hikes/hike.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/hikes/hike.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/hikes/hike.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/users/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/users/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_backend/users/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_css/form.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_css/form.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_helpers/auth-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_helpers/auth-header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_helpers/fake-backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_helpers/fake-backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/user.service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,9 +57,9 @@
         <counts>
           <entry key="css" value="8" />
           <entry key="html" value="4" />
-          <entry key="js" value="223" />
-          <entry key="json" value="13" />
-          <entry key="jsx" value="66" />
+          <entry key="js" value="251" />
+          <entry key="json" value="17" />
+          <entry key="jsx" value="73" />
           <entry key="lock" value="1" />
           <entry key="md" value="3" />
           <entry key="ts" value="6" />
@@ -42,9 +69,9 @@
         <counts>
           <entry key="CSS" value="8" />
           <entry key="HTML" value="4" />
-          <entry key="JSON" value="13" />
-          <entry key="JSX Harmony" value="66" />
-          <entry key="JavaScript" value="223" />
+          <entry key="JSON" value="17" />
+          <entry key="JSX Harmony" value="73" />
+          <entry key="JavaScript" value="251" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="TypeScript" value="6" />
           <entry key="yarn.lock" value="1" />
@@ -55,9 +82,9 @@
           <entry key="JavaScript Console" value="6" />
           <entry key="css" value="99" />
           <entry key="html" value="29" />
-          <entry key="js" value="22086" />
-          <entry key="json" value="178" />
-          <entry key="jsx" value="12652" />
+          <entry key="js" value="23833" />
+          <entry key="json" value="184" />
+          <entry key="jsx" value="12653" />
           <entry key="md" value="367" />
         </counts>
       </usages-collector>
@@ -65,9 +92,9 @@
         <counts>
           <entry key="CSS" value="99" />
           <entry key="HTML" value="29" />
-          <entry key="JSON" value="178" />
-          <entry key="JSX Harmony" value="12652" />
-          <entry key="JavaScript" value="22092" />
+          <entry key="JSON" value="184" />
+          <entry key="JSX Harmony" value="12653" />
+          <entry key="JavaScript" value="23839" />
           <entry key="PLAIN_TEXT" value="367" />
         </counts>
       </usages-collector>
@@ -79,103 +106,110 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48370275">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/hikes/hike.model.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/hikes/hike.service.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1695">
-                  <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/hikes/hike.controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="52" selection-start-column="52" selection-end-column="52" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/users/user.model.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/users/user.service.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_actions/user.actions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-7">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                  <folding>
-                    <element signature="e#0#46#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_services/user.service.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#0#44#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/backend/users/user.controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-8">
-                  <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_helpers/auth-header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_helpers/fake-backend.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_components/Footer.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_css/form.css.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_services/hike.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_services/user.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1785">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_backend/_helpers/authorize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -204,6 +238,10 @@
       <find>columbia co</find>
       <find>privateroute</find>
       <find>getcurrent</find>
+      <find>apiURL</find>
+      <find>leader</find>
+      <find>sub:</find>
+      <find>authhead</find>
     </findStrings>
     <replaceStrings>
       <replace>email</replace>
@@ -215,57 +253,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src_redux/index.jsx" />
-        <option value="$PROJECT_DIR$/src/_actions/user.actions.js" />
-        <option value="$PROJECT_DIR$/src/_reducers/registration.reducer.js" />
-        <option value="$PROJECT_DIR$/src/_reducers/users.reducer.js" />
         <option value="$PROJECT_DIR$/src/_reducers/profile.reducer.js" />
         <option value="$PROJECT_DIR$/src/_helpers/store.js" />
-        <option value="$PROJECT_DIR$/src/_helpers/auth-header.js" />
         <option value="$PROJECT_DIR$/src/ProfilePage/index.js" />
         <option value="$PROJECT_DIR$/src/HomePage/HomePage.jsx" />
-        <option value="$PROJECT_DIR$/src/ProfilePage/ProfilePage.jsx" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/_fonts/font.css" />
         <option value="$PROJECT_DIR$/src/_components/PhoneMaskedInput.jsx" />
         <option value="$PROJECT_DIR$/src/_components/MaskedInput.jsx" />
         <option value="$PROJECT_DIR$/src/_components/FormField.jsx" />
         <option value="$PROJECT_DIR$/src/_css/base.css" />
-        <option value="$PROJECT_DIR$/src/_components/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/_components/index.js" />
         <option value="$PROJECT_DIR$/src/_components/PrivateRoute.jsx" />
         <option value="$PROJECT_DIR$/src/_helpers/breakpoint-util.js" />
         <option value="$PROJECT_DIR$/src/App/App.jsx" />
         <option value="$PROJECT_DIR$/src/_css/theme.js" />
-        <option value="$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx" />
-        <option value="$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx" />
-        <option value="$PROJECT_DIR$/src/_css/form.css.js" />
         <option value="$PROJECT_DIR$/src/_components/FormButtons.jsx" />
-        <option value="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" />
-        <option value="$PROJECT_DIR$/src/_helpers/fake-backend.js" />
         <option value="$PROJECT_DIR$/backend/_helpers/error-handler.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike-request.service.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike-request.model.js" />
-        <option value="$PROJECT_DIR$/backend/config.json" />
         <option value="$PROJECT_DIR$/backend/_helpers/jwt.js" />
         <option value="$PROJECT_DIR$/src/index.jsx" />
         <option value="$PROJECT_DIR$/backend/server.js" />
         <option value="$PROJECT_DIR$/src/_helpers/config.js" />
-        <option value="$PROJECT_DIR$/src/_services/user.service.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/_components/MaskedFields.jsx" />
         <option value="$PROJECT_DIR$/src/_components/NavBar.jsx" />
         <option value="$PROJECT_DIR$/backend/users/users.controller.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike-request.controller.js" />
         <option value="$PROJECT_DIR$/backend/README-backend.md" />
-        <option value="$PROJECT_DIR$/backend/users/user.model.js" />
         <option value="$PROJECT_DIR$/backend/_helpers/db.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike.model.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/backend/config.json" />
+        <option value="$PROJECT_DIR$/src/_services/user.service.js" />
+        <option value="$PROJECT_DIR$/src/_helpers/authorize.js" />
+        <option value="$PROJECT_DIR$/backend/_helpers/authorize.js" />
+        <option value="$PROJECT_DIR$/backend/_helpers/role.js" />
         <option value="$PROJECT_DIR$/backend/users/user.service.js" />
+        <option value="$PROJECT_DIR$/backend/users/user.model.js" />
         <option value="$PROJECT_DIR$/backend/users/user.controller.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike.service.js" />
         <option value="$PROJECT_DIR$/backend/hikes/hike.controller.js" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/_helpers/auth-header.js" />
+        <option value="$PROJECT_DIR$/src/_services/hike.service.js" />
+        <option value="$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx" />
+        <option value="$PROJECT_DIR$/src/ProfilePage/ProfilePage.jsx" />
+        <option value="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" />
+        <option value="$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx" />
+        <option value="$PROJECT_DIR$/src/_components/Footer.jsx" />
+        <option value="$PROJECT_DIR$/src/_css/form.css.js" />
+        <option value="$PROJECT_DIR$/src/_helpers/fake-backend.js" />
       </list>
     </option>
   </component>
@@ -283,9 +321,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="788" />
     <option name="y" value="22" />
-    <option name="width" value="1534" />
+    <option name="width" value="1132" />
     <option name="height" value="1110" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -326,48 +365,19 @@
             <path>
               <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
               <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
               <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="hikes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
               <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redux-hiking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redux-hiking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,15 +396,16 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/backend/_helpers" />
+      <recent name="$PROJECT_DIR$/src/_fonts" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src_redux/RegisterPage" />
       <recent name="$PROJECT_DIR$/src_redux/LoginPage" />
       <recent name="$PROJECT_DIR$/src_redux/HomePage" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/_fonts" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -474,12 +485,12 @@
       <workItem from="1545960565772" duration="16616000" />
       <workItem from="1546031974481" duration="8555000" />
       <workItem from="1546065317557" duration="5053000" />
-      <workItem from="1546237085531" duration="17011000" />
+      <workItem from="1546237085531" duration="21158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96035000" />
+    <option name="totallyTimeSpent" value="100182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,10 +502,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1110" extended-state="6" />
+    <frame x="788" y="22" width="1132" height="1110" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16640337" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21062106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -506,7 +517,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907662" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49962604" visible="true" weight="0.22298625" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49962604" visible="true" weight="0.22298625" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50037396" side_tool="true" weight="0.27701375" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -541,34 +552,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/text-mask-addons/dist/emailMask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="377" selection-start-column="371" selection-end-column="377" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grommet/es6/components/Select/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProfilePage/ProfilePage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grommet-icons/es6/StyledIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/grommet-icons/es6/icons/Menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -611,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_components/Footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_helpers/breakpoint-util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -625,34 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginPage/LoginPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_css/form.css.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_components/FormButtons.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -677,10 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hikes/hike-request.model.js">
+    <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike-request.model.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hikes/hike-request.service.js">
+    <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike-request.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
@@ -694,17 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/_helpers/jwt.js">
+    <entry file="file://$PROJECT_DIR$/src/_backend/_helpers/jwt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/_helpers/error-handler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -712,13 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_helpers/fake-backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="207" column="67" lean-forward="true" selection-start-line="207" selection-start-column="67" selection-end-line="207" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -753,44 +691,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_helpers/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hikes/hike-request.controller.js">
+    <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike-request.controller.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="61" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/README-backend.md">
+    <entry file="file://$PROJECT_DIR$/src/_backend/README-backend.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="58" selection-start-line="34" selection-start-column="2" selection-end-line="36" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_helpers/auth-header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -804,31 +711,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage/HomePage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#601#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/_helpers/db.js">
+    <entry file="file://$PROJECT_DIR$/src/_backend/_helpers/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -842,76 +749,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/users/user.service.js">
+    <entry file="file://$PROJECT_DIR$/src/_helpers/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="15">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/_helpers/error-handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/_helpers/role.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/users/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/users/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/users/user.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/hikes/hike.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_backend/_helpers/authorize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_services/hike.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_services/user.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/users/user.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/users/user.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hikes/hike.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hikes/hike.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hikes/hike.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/ProfilePage/ProfilePage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginPage/LoginPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage/HomePage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_helpers/auth-header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_components/FormFieldWrapper.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_components/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_css/form.css.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_helpers/fake-backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

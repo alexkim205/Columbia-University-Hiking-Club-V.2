@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box, Heading, TextInput, CheckBox } from 'grommet';
+import { Box, Heading, TextInput } from 'grommet';
 import { media } from '../_helpers/breakpoint-util';
 import theme from '../_css/theme.js';
 

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Role = require('../_helpers/role');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
@@ -31,9 +32,9 @@ const userSchema = new Schema({
   interestInHiking: {type: String},
   medicalConditions: {type: String},
   createdDate: {type: Date, default: Date.now},
-  groups: {
+  roles: {
     type: [String],
-    default: ['User'],
+    default: [Role.User],
   },
 });
 

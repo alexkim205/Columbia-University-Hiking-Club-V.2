@@ -1,6 +1,5 @@
 import React     from 'react';
 import styled    from 'styled-components';
-import { media } from '../_helpers/breakpoint-util';
 
 import { Box }         from 'grommet';
 import theme           from '../_css/theme.js';

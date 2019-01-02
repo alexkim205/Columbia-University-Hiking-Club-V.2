@@ -1,15 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const hikeService = require('./hike.service');
+const Role = require('../_helpers/role');
+const authorize = require('../_helpers/authorize');
 
 // routes with baseURL - /hikes
-router.put('/register/:userid/:hikeid', register);
-router.put('/unregister/:userid/:hikeid', unregister);
+router.put('/register/:userid/:hikeid', authorize([Role.Admin, Role.User]), register);
+router.put('/unregister/:userid/:hikeid', authorize([Role.Admin, Role.User]), unregister);
 router.get('/', getAll);
 router.get('/:id', getById);
-router.post('/new', create);
-router.put('/:id', update);
-router.delete('/:id', _delete);
+router.post('/new', authorize(Role.Admin), create);
+router.put('/:id', authorize([Role.Admin, Role.Leader]), update);
+router.delete('/:id', authorize(Role.Admin), _delete);
 
 module.exports = router;
 
@@ -24,12 +26,28 @@ module.exports = router;
  */
 
 function register (req, res, next) {
+  const currentUser = res.user;
+  const userId = parseInt(req.params.userId);
+
+  // only allow registration for currentUser or by Admin
+  if (userId !== currentUser.sub && currentUser.role !== Role.Admin) {
+    return res.status(401).json({message: 'Unauthorized'});
+  }
+
   hikeService.register(req.params.userid, req.params.hikeid)
     .then(() => res.json({}))
     .catch(err => next(err));
 }
 
 function unregister (req, res, next) {
+  const currentUser = res.user;
+  const userId = parseInt(req.params.userId);
+
+  // only allow registration for currentUser or by Admin
+  if (userId !== currentUser.sub && currentUser.role !== Role.Admin) {
+    return res.status(401).json({message: 'Unauthorized'});
+  }
+
   hikeService.unregister(req.params.userid, req.params.hikeid)
     .then(() => res.json({}))
     .catch(err => next(err));
