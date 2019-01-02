@@ -5,11 +5,11 @@ const UserSchema = db.UserSchema;
 
 const hikeSchema = new Schema({
   leaders: {type: [UserSchema], required: true},
-  hikers: [UserSchema],
+  hikers: {type: [UserSchema]},
   log: [
     {
       action: String,
-      userId: ObjectId,
+      userId: Schema.Types.ObjectId,
       dateTime: {type: Date, default: Date.now},
     }],
   destination: {type: String, required: true},
@@ -17,7 +17,7 @@ const hikeSchema = new Schema({
     type: String,
     validate: {
       validator: function (v) {
-        return /Easy|Intermediate|Difficult/i.test(v);
+        return /Easy|Intermediate|Hard/i.test(v);
       },
       message: props => `${props.value} is not a valid difficulty level`,
     },

@@ -16,7 +16,8 @@ function authorize (roles = []) {
 
     // authorize based on user role
     (req, res, next) => {
-      if (roles.length && !roles.includes(req.user.role)) {
+      console.log(req)
+      if (roles.length && !roles.some(r=> req.user.roles.includes(r))) {
         // user's role is not authorized
         return res.status(401).json({message: 'Unauthorized'});
       }

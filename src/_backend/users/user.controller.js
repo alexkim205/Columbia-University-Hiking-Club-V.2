@@ -7,7 +7,7 @@ const authorize = require('../_helpers/authorize');
 // routes with baseURL - /users
 router.post('/authenticate', authenticate);
 router.post('/register', register);
-router.get('/', authorize(Role.Admin), getAll);
+router.get('/', authorize([Role.Admin, Role.User]), getAll);
 // router.get('/current', getCurrent);
 router.get('/:id', authorize([Role.Admin, Role.User]), getById);
 router.put('/:id', authorize(Role.User), update);

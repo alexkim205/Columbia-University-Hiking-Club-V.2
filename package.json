@@ -7,8 +7,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "backend": "node src/_backend/server.js",
-    "backend-dev": "nodemon src/_backend/server.js"
+    "backend": "node --inspect src/_backend/server.js",
+    "backend-dev": "nodemon --inspect src/_backend/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
