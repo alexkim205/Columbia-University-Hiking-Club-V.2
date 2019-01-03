@@ -5,10 +5,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "frontend-test": "react-scripts test",
     "eject": "react-scripts eject",
     "backend": "node --inspect src/_backend/server.js",
-    "backend-dev": "nodemon --inspect src/_backend/server.js"
+    "backend-dev": "nodemon --inspect src/_backend/server.js",
+    "backend-test": "mocha --exit src/_backend/_test/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +44,10 @@
     "text-mask-addons": "^3.8.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "chai-things": "^0.2.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.9"
   }
 }

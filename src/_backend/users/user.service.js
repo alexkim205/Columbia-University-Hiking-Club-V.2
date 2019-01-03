@@ -21,8 +21,6 @@ async function authenticate ({email, password}) {
     // return user with token without password
     const {password, ...userWithoutPwd} = user.toObject();
     const token = jwt.sign({sub: user.id, roles: user.roles}, config.secret);
-    console.log(user);
-    console.log(token);
     return {
       ...userWithoutPwd,
       token,
@@ -53,6 +51,8 @@ async function create (userParam) {
 
   // save user
   await user.save();
+
+  return user;
 }
 
 async function update (id, userParam) {
@@ -74,6 +74,8 @@ async function update (id, userParam) {
 
   // save user
   await user.save();
+
+  return user;
 }
 
 async function _delete (id) {

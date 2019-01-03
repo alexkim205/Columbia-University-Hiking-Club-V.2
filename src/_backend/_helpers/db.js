@@ -1,6 +1,7 @@
 const config = require('../config.json');
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || config.connectionString);
+const mongooseOptions = {useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false};
+mongoose.connect(process.env.MONGODB_URI || config.connectionString, mongooseOptions);
 mongoose.Promise = global.Promise;
 
 // schemas and models

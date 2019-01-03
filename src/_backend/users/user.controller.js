@@ -7,10 +7,10 @@ const authorize = require('../_helpers/authorize');
 // routes with baseURL - /users
 router.post('/authenticate', authenticate);
 router.post('/register', register);
-router.get('/', authorize([Role.Admin, Role.User]), getAll);
+router.get('/', authorize([Role.Admin]), getAll);
 // router.get('/current', getCurrent);
 router.get('/:id', authorize([Role.Admin, Role.User]), getById);
-router.put('/:id', authorize(Role.User), update);
+router.put('/:id', authorize([Role.Admin, Role.User]), update);
 router.delete('/:id', authorize(Role.Admin), _delete);
 
 module.exports = router;
@@ -42,10 +42,10 @@ function getAll (req, res, next) {
 
 function getById (req, res, next) {
   const currentUser = req.user;
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
 
   // only allows admins to access other user records
-  if (id !== currentUser.sub && currentUser.role !== Role.Admin) {
+  if (id !== currentUser.sub && !currentUser.roles.includes(Role.Admin)) {
     return res.status(401).json({message: 'Unauthorized'});
   }
 
@@ -55,8 +55,15 @@ function getById (req, res, next) {
 }
 
 function update (req, res, next) {
+  const currentUser = req.user;
+  const id = req.params.id;
+
+  // only allows admins to access other user records
+  if (id !== currentUser.sub && !currentUser.roles.includes(Role.Admin)) {
+    return res.status(401).json({message: 'Unauthorized'});
+  }
   userService.update(req.params.id, req.body)
-    .then(() => res.json({}))
+    .then(user => user ? res.json(user) : res.sendStatus(404))
     .catch(err => next(err));
 }
 
